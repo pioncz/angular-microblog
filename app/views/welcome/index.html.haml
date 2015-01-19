@@ -1,0 +1,62 @@
+%section.container
+  %h1 xDD
+  %h2= @post
+  .content
+    = @post
+  %a{:href => "/register"} register
+  %a{:href => "/login"} login
+
+%h1 Login
+
+= form_tag '/login' do
+  = field_set_tag do
+    = label_tag :login, 'Login:'
+    = text_field_tag :login
+    = label_tag :password, 'Password:'
+    = password_field_tag :password
+    = submit_tag 'Login'
+
+rails generate model User kety:string d:text
+string, text, boolean, integer
+
+rails generate model User login:string email:string password:string last_login:integer photo:string background_photo:string description:text is_private:boolean followers:integer followees:integer reports:integer
+User
+login
+email
+password
+created_at
+last_login
+photo
+background_photo
+description
+is_private
+reports
+followers_count
+followees_count
+
+rails generate model Notification deeplink:string message:text user_id
+Notification
+deeplink
+created_at
+
+rails generate model Post type:string content:text comments_count:integer score:integer user_id:integer reports:integer
+Post
+Type
+Content
+Created_at
+Comments_count
+Score
+user_id
+reports
+
+rails generate model Comment post_id:integer content:text reports:integer
+Comment
+created_at
+post_id
+content
+reports
+
+Following
+follower (śledzący)
+followee (śledzony)
+created_at

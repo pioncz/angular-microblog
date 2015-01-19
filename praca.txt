@@ -1,0 +1,22 @@
+profil usera
+	*lista followersow
+ 	*lista followingu
+	*modlitwy usera
+	-grupy schowaæ
+	+zdjecie z tla
+	+description
+modlitwa
+	+
+hashtag
+	*lista modlitw
+	+sugerowane hashtagi na podstawie popularnych na platformie
+
+mozemy wyjac szery na kontent do poszerowania
+->
+
+explore
+
+mój profil
+dodawanie treœci
+newsy
+czat

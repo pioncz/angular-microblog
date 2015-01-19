@@ -1,0 +1,5 @@
+%a{:href => 'logout'} logout
+%h2= @current_user.to_json
+%h2 Flash messages
+= flash.each do |notice|
+  %p= notice

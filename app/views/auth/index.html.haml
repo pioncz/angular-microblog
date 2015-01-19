@@ -1,0 +1,11 @@
+%h1 Register
+
+= form_tag '/register' do
+  = field_set_tag do
+    = label_tag :login, 'Login:'
+    = text_field_tag :login
+    = label_tag :email, 'Email:'
+    = text_field_tag :email
+    = label_tag :password, 'Password:'
+    = password_field_tag :password
+    = submit_tag 'Register'

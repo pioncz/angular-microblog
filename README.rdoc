@@ -1,0 +1,7 @@
+== README
+
+I've only made so far:
+
+- all the models
+
+- simple registration / login
